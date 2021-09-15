@@ -1,11 +1,7 @@
 <h1>Sejam bem vindos!!!</h1>
-<p>Usuario a data de hoje é: <%= data_br(Date.today) %></p>
+<p> <%= @meu_nome %> a data de hoje é: <%= data_br(Date.today) %></p>
 
-<ul>
-    <li>
-        <%= link_to "Cadastro de Moedas", coins_path %>
-    </li>
-</ul>
+<%= render 'menu'%>
 
 <p>
     Você está em ambiente de <strong><%= Rails.env %></strong>
